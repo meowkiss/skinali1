@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto;
+    padding: 0px 10px;
+    max-width: 1190px;
+    &-footer {
+        margin: 0 auto;
+        padding: 0 10px;
+        max-width: 1200px;
+    }
+}

@@ -1,0 +1,41 @@
+.stages {
+    background-color: $secondary-bg;
+    &__block {
+        padding-bottom: 105px;
+    }
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            max-width: 150px;
+            width: 100%;
+            padding: 0 5px;
+            position: relative;
+            &::before {
+                content: " ";
+                background-image: url(../../img/stages/line.png);
+                position: absolute;
+                top: 60px;
+                left: 10px;
+                height: 1px;
+                width: 1000px;
+                z-index: 5;
+            }
+        }
+        &__image {
+            height: 76px;
+            display: block;
+            margin: 0 auto 30px;
+        }
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__desc {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

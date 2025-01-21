@@ -1,0 +1,56 @@
+.contact {
+    background-color: $secondary-bg;
+    &__block {
+        display: flex;
+        justify-content: space-around;
+    }
+    &-block {
+        padding-bottom: 40px;
+        &__item {}
+        &__image {
+            max-height: 32px;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__text {
+            display: block;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        &__number {}
+        &__adress {}
+        &__email {}
+    }
+}
+
+// media-width
+@media (max-width:1180px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width:767px) {
+    .contact {
+        &__block {
+            flex-direction: column;
+        }
+        &-block {
+            &__text {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        &-block {
+            &__text {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

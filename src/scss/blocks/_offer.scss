@@ -1,0 +1,45 @@
+.offer {
+    background-color: #efefef;
+    padding-bottom: 30px;
+    &__wrapp {
+        transform: translateY(-100px);
+        background-color: white;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+    &__inner {
+        padding: 80px 70px 85px 80px;
+        background: url('../../img/offer-bg.jpg') 100% 0/contain no-repeat;
+    }
+}
+
+// media-width
+@media (max-width:1180px) {
+    .offer {
+        &__inner {
+            background: none;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {}
+}
+
+@media (max-width:767px) {
+    .offer {
+        &__wrapp {
+            transform: translateY(-40px);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .offer {
+        &__inner {
+            padding: 40px 15px 40px 15px;
+        }
+        &__wrapp {
+            transform: translateY(0px);
+        }
+    }
+}

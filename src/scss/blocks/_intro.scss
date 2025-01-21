@@ -1,0 +1,70 @@
+.intro {
+    min-height: 711px;
+    background: url('../../img/intro__bacground.jpg') top left -250px/ cover no-repeat;
+    &__wrapp {
+        max-width: 280px;
+        padding: 120px 0 290px 0;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    &__text {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 65px;
+    }
+}
+
+// media-width
+@media (max-width:1180px) {}
+
+@media (max-width: 991px) {
+    .intro {
+        background: url('../../img/intro__bacground.jpg') top left -350px/ cover no-repeat;
+    }
+}
+
+@media (max-width:767px) {
+    .intro {
+        background: url('../../img/intro__bacground.jpg') top left -500px/ cover no-repeat;
+        &__title {
+            font-size: 26px;
+        }
+        &__text {
+            font-size: 26px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .intro {
+        min-height: 330px;
+        position: relative;
+        background: #efefef;
+        ;
+        &__wrapp {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            right: 10px;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            z-index: 7;
+            padding: 60px 10px 60px 10px;
+        }
+        &__title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+}

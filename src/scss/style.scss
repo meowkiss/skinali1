@@ -1,0 +1,63 @@
+            @charset "UTF-8";
+            @import "normalize";
+            // @font-face {
+            //     font-family: "Roboto";
+            //     src: url("../fonts/Roboto-Bold.ttf");
+            //     font-weight: bold;
+            // }
+            // @font-face {
+            //     font-family: "Roboto";
+            //     src: url("../fonts/Roboto-Medium.ttf");
+            //     font-weight: medium;
+            // }
+            // @font-face {
+            //     font-family: "Roboto";
+            //     src: url("../fonts/Roboto-Regular.ttf");
+            //     font-weight: normal;
+            // }
+            /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+            
+            // p+p {
+            //     margin-top: 15px;
+            // 
+            // Настройка Цветов
+            @import 'colors';
+            //Базовые настройки сетки
+            @import 'fonts';
+            // Настройка Цветов
+            @import 'grid';
+            // Настройка Шрифтов
+            @import 'interface';
+            //Шапка сайта
+            @import 'blocks/navbar';
+            // Интро сайта 
+            @import 'blocks/intro';
+            // Оффер сайта 
+            @import 'blocks/offer';
+            // // Преимущества сайта
+            @import 'blocks/advanteges';
+            // // Каталог сайта
+            @import 'blocks/catalog';
+            // // Блог сайта
+            @import 'blocks/blog-list';
+            // Цены сайта
+            @import 'blocks/prices';
+            // Этапы работ
+            @import 'blocks/stages';
+            //Отзывы 
+            @import 'blocks/feedback';
+            // Расчет стоимости
+            @import 'blocks/calculation';
+            // Производство
+            @import 'blocks/factory';
+            // Контакты
+            @import 'blocks/contacts';
+            // Карта
+            @import 'blocks/map';
+            // Вопросы к менеджеру
+            @import 'blocks/questions';
+            // Футер
+            @import 'blocks/footer';
+            * {
+                word-break: break-word;
+            }

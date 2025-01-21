@@ -1,0 +1,81 @@
+        .factory {
+            &__block {
+                align-items: center;
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 100px;
+                flex-wrap: wrap;
+                gap: 60px 10px;
+            }
+            &-block {
+                &__image {
+                    margin-left: 40px;
+                    max-height: 268px;
+                    height: 100%;
+                }
+                &__wrapp {
+                    max-width: 540px;
+                    width: 100%;
+                    padding: 0px 5px;
+                    // margin-left: 72px;
+                }
+                &__desc {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 42px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        
+        // media-width
+        @media (max-width:1180px) {}
+        
+        @media (max-width: 991px) {
+            .factory {
+                &-block {
+                    flex-direction: column;
+                    &__image {
+                        max-height: 100%;
+                        margin: 0;
+                    }
+                    &__wrapp {
+                        padding: 0 20px;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        
+        @media (max-width:767px) {
+            .factory {
+                &-block {
+                    gap: 30px 0;
+                    padding-bottom: 60px;
+                    &__desc {
+                        margin-bottom: 30px;
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .factory {
+                &-block {
+                    padding-bottom: 50px;
+                    &__wrapp {
+                        padding: 0 10px;
+                        max-width: 100%;
+                    }
+                    &__desc {
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }

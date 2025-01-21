@@ -1,0 +1,254 @@
+    .body {
+        @include light;
+        color: $text-color;
+        font-size: 18px;
+    }
+    
+    .section {
+        &-title {
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &__title {
+            padding: 100px 0;
+        }
+    }
+    
+    .button {
+        border: 1px solid $priority;
+        background-color: $priority;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 240px;
+        height: 60px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+        &__transparent {
+            background-color: white;
+            width: 210px;
+            height: 43px;
+            font-size: 12px;
+            color: $priority;
+        }
+        &__button-form {
+            height: 80px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            &_size {
+                padding: 10px;
+                line-height: 20px;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &__catalog {
+            font-size: 16px;
+            font-weight: bold;
+            width: 350px;
+            height: 70px;
+        }
+    }
+    
+    .form {
+        &__title {
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 21px;
+            margin-bottom: 40px;
+        }
+        &__row {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &_bottom {
+                margin-bottom: 30px;
+            }
+        }
+        &__group {
+            width: 33.3%;
+            &-min {
+                display: flex;
+            }
+        }
+        &__select {
+            padding: 0 50px 0 30px;
+            position: relative;
+            appearance: none;
+            background: url('../../img/select-arrow.png') no-repeat right 20px center;
+            border: 1px solid #dddddd;
+            width: 100%;
+            height: 80px;
+            font-size: 15px;
+        }
+        &__option {}
+        &__input {
+            font-size: 15px;
+            padding: 0 20px 0 30px;
+            width: 100%;
+            height: 80px;
+            border: 1px solid #dddddd;
+            &-checkbox {
+                display: none;
+            }
+        }
+        &__label {
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 17px;
+            &-checkbox {
+                font-size: 17px;
+                display: flex;
+                align-items: center;
+                &::before {
+                    content: '';
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #dddddd;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    
+    .form__input-checkbox:checked+.form__label-checkbox::before {
+        background-color: rgb(62, 100, 100);
+    }
+    
+    // media-width
+    @media (max-width:1180px) {}
+    
+    @media (max-width: 991px) {
+        .form {
+            &__group {
+                &_width {
+                    width: 345px;
+                }
+            }
+        }
+        .button {
+            &__button-form {
+                &_size {}
+            }
+        }
+    }
+    
+    @media (max-width:767px) {
+        .section {
+            &-title {
+                font-size: 24px;
+            }
+            &__title {
+                padding: 60px 0;
+            }
+        }
+        .button {
+            &__button-form {
+                &-size {}
+            }
+        }
+        .form {
+            &__row {
+                flex-direction: column;
+                &-another {
+                    flex-direction: row;
+                }
+                &_bottom {
+                    margin-bottom: 15px;
+                }
+            }
+            &__group {
+                width: 100%;
+                &_width {
+                    width: 100%;
+                }
+                &-min {
+                    width: 40%;
+                }
+            }
+            &__input {
+                margin-bottom: 15px;
+            }
+            &__label {
+                &-checkbox {
+                    margin-bottom: 15px;
+                }
+            }
+            &__select {
+                margin-bottom: 15px;
+            }
+            &__title {
+                font-size: 21px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            &__text {
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 35px;
+            }
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .section {
+            &-title {
+                font-size: 21px;
+            }
+            &__title {
+                padding: 50px 0;
+            }
+        }
+        .button {
+            &__catalog {
+                font-size: 14px;
+                font-weight: normal;
+                width: 285px;
+                height: 60px;
+            }
+        }
+        .form {
+            &__row {
+                &-another {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px 10px;
+                    flex-wrap: wrap;
+                }
+                &_bottom {
+                    margin-bottom: 10px;
+                }
+            }
+            &__group {
+                &-min {
+                    width: 100%;
+                }
+            }
+            &__title {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+            &__text {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+            &__label {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
